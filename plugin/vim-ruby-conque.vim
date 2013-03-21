@@ -73,7 +73,7 @@ function! RunRubyCurrentFileConque()
 endfunction
 
 function! RunRspecCurrentLineConque()
-  call RunSingleConque(GetRubyConqueRspecCommand() . " " . bufname('%') . " -l "  . line('.'))
+  call RunSingleConque(GetRubyConqueRspecCommand() . " " . bufname('%') . ":"  . line('.'))
 endfunction
 
 function! RunRspecCurrentFileConque()
